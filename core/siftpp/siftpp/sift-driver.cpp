@@ -25,7 +25,7 @@ using namespace std ;
 int
 main(int argc, char** argv)
 {
-  int first    = -1 ;
+  int first    = 1 ;
   int octaves  = -1 ;
   int levels   = 3 ;
   int nodescr  = 0 ;

@@ -15,7 +15,7 @@ make
 
 
 # if GPU is there, use siftgpu
-if `test -e /usr/lib/libcuda.so`; then
+if [ USE_SIFTGPU -eq 1 ] then
 
 ############################################
 # install siftgpu
@@ -24,8 +24,8 @@ if `test -e /usr/lib/libcuda.so`; then
 cd $CMVS_CORE/siftgpu
 cd ./SiftGPU
 make
-cd bin
-./loweSIFT.sh
+#cd bin
+#./loweSIFT.sh
 
 else # else use siftpp for CPU
 

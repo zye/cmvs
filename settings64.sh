@@ -1,6 +1,10 @@
 ###############################################################################
 #
-# You need to set CMVS_TOP and CMVS_DEP before doing anything
+# You need to set these variables before doing anything:
+#
+# 1. CMVS_TOP
+# 2. CMVS_DEP
+# 3. USE_SIFTGPU / USE_SIFTPP
 #
 ###############################################################################
 
@@ -52,6 +56,19 @@ else
 	echo Please set CMVS_DEP in settings64.sh ; 
 	return; 
 fi
+
+###############################################################################
+# 
+# 3. USE_SIFTGPU / USE_SIFTPP
+#
+# specify which sift software to use
+# 1. siftgpu, a gpu version of sift
+# 2. siftpp, a cpu version of sift
+#
+###############################################################################
+
+export USE_SIFTGPU=1
+export USE_SIFTPP=0 
 
 # core path
 export CMVS_CORE=$CMVS_TOP/core
