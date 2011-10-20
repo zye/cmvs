@@ -19,7 +19,7 @@ if [ $OS == "Cygwin" ]
 then
     SIFT=$BIN_PATH/siftWin32.exe
 else
-	if [ $USE_SIFTGPU -eq 1 ] then
+	if [ $USE_SIFTGPU -eq 1 ]; then
 	    SIFT=$CMVS_CORE/siftgpu/SiftGPU/bin/loweSIFT ;
 	elif [ $USE_SIFTPP -eq 1 ] ; then
 	    SIFT=$CMVS_CORE/siftpp/siftpp/sift ;
