@@ -15,7 +15,8 @@ make
 
 
 # if GPU is there, use siftgpu
-if [ USE_SIFTGPU -eq 1 ] then
+if [ $USE_SIFTGPU -eq 1 ] 
+then
 
 ############################################
 # install siftgpu
